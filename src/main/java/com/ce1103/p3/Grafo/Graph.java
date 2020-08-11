@@ -30,4 +30,20 @@ public class Graph {
     public void setNodes(Set<Node> nodes) {
         this.nodes = nodes;
     }
+
+    public Node getNode(String name){
+        for (Node node : this.nodes) {
+            if (name.equals(node.getName())){
+                return node;
+
+            }
+
+            }
+        return null;
+    }
+
+
+
+
+
 }
