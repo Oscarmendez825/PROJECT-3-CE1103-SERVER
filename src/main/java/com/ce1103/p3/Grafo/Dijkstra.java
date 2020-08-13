@@ -2,8 +2,21 @@ package com.ce1103.p3.Grafo;
 
 import java.util.*;
 
-
+/***
+ * Dijkstra  class
+ * @author Oscar Méndez
+ * @author Keyner Gómez
+ * @author Hansel Hampton
+ * @version 1.1
+ * @since 2020
+ */
 public class Dijkstra {
+    /***
+     * Calc the shortest path
+     * @param graph
+     * @param source
+     * @return
+     */
     public Graph calcShortestPath(Graph graph, Node source){
         source.setDistance(0);
         Set<Node> settledNodes = new HashSet<>();
@@ -26,6 +39,11 @@ public class Dijkstra {
         return graph;
     }
 
+    /***
+     * get the lowest distance
+     * @param unsettledNodes
+     * @return
+     */
     private Node getLowestDistanceNode(Set<Node> unsettledNodes) {
         Node lowestDistanceNode = null;
         int lowestDistance = Integer.MAX_VALUE;
@@ -39,6 +57,12 @@ public class Dijkstra {
         return lowestDistanceNode;
     }
 
+    /***
+     * Calc the minimum distance
+     * @param evalNode
+     * @param weight
+     * @param source
+     */
     private void calcMinDistance(Node evalNode, int weight, Node source){
         int sourceDistance = source.getDistance();
         if (sourceDistance + weight < evalNode.getDistance()){

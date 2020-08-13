@@ -2,12 +2,11 @@ package com.ce1103.p3.Usuario;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /***
- * User creator in Json files.
+ * Ticket creator in Json files.
  * @author Oscar Méndez
  * @author Keyner Gómez
  * @author Hansel Hampton
@@ -20,8 +19,8 @@ public class CreateJsonTicket {
     String direccion = "C:\\Users\\Oscar\\IdeaProjects\\RSSERVER\\JSONuser.json";
 
     /***
-     * This method adds a new user to the respective Json file.
-     * @param tiquete String
+     * This method adds a new ticket to the respective Json file.
+     * @param tiquete Tiquete
      */
     public void ticketUsuario(Tiquete tiquete) throws IOException {
         RandomAccessFile randomAccessFile = new RandomAccessFile(direccion, "rw");
@@ -46,7 +45,7 @@ public class CreateJsonTicket {
             jsonObject.put("apellido", tiquete.getApellido());
             jsonObject.put("de", tiquete.getDe());
             jsonObject.put("a", tiquete.getA());
-            jsonObject.put("fechas",fechas);
+            //jsonObject.put("fechas",fechas);
             jsonObject.put("cantidad",tiquete.getCantidad());
 
 
@@ -63,7 +62,7 @@ public class CreateJsonTicket {
             jsonObject.put("apellido", tiquete.getApellido());
             jsonObject.put("de", tiquete.getDe());
             jsonObject.put("a", tiquete.getA());
-            jsonObject.put("fechas",fechas);
+            //jsonObject.put("fechas",fechas);
             jsonObject.put("cantidad",tiquete.getCantidad());
 
 
