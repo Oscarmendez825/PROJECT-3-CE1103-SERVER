@@ -1,0 +1,18 @@
+# INSTITUTO TECNOLÓGICO DE COSTARICA
+# ÁREA ACADÉMICA DE INGENIERÍA EN COMPUTADORES
+## ALGORITMOS Y ESTRUCTURAS DE DATOS I (CE1103)
+## III PROYECTO RAILSPOT
+
+
+* Estudiantes:
+
+Oscar Méndez
+
+Keyner Gómez
+
+Hansel Hampton
+
+
+* Profesor:
+
+Luis Diego Noguera Mena
